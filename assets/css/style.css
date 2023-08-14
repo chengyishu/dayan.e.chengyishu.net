@@ -1,0 +1,81 @@
+/*取消圆角*/
+.card, .card-body {
+	border-radius: 0 !important;
+}
+
+/*背景色与缩进*/
+body {
+    scale: 0.6;
+}
+
+/*六十四卦*/
+h3.title {
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+}
+
+/*爻*/
+ul.gua>li>span {
+    display: inline-block;
+    height: 45px;
+    margin-bottom: 25px;
+}
+
+/*宜变之爻*/
+.should-bian {
+    border: 2px solid #adb5bd;
+    transform: scale(1.045);
+    height: 71px;
+    position: absolute;
+    width: 100%;
+    border-radius: 25px;
+    display: none;
+}
+.should-bian.yin {
+    border: 2px solid #0d6efd;
+}
+.should-bian.yang {
+    border: 2px solid #f44336;    
+}
+.sb6 {top: 21.5%;}
+.sb5 {top: 32%;}
+.sb4 {top: 42.3%;}
+.sb3 {top: 59.2%;}
+.sb2 {top: 69.6%;}
+.sb1 {top: 80.1%;}
+
+/*分隔线*/
+ul.gua>li:nth-child(3) {
+	padding-bottom: 10px;
+	margin-bottom: 35px;
+	border-bottom: 1px dashed #ccc;
+}
+
+/*阳爻*/
+li.yang>span:nth-child(1) {
+    background: black;
+    width: 100%;
+}
+li.yang-active>span:nth-child(1) {
+    background: #f44336;
+}
+
+/*阴爻*/
+li.yin>span:nth-child(1), 
+li.yin>span:nth-child(3) {
+    background: black;
+    width: 42.5%;
+}
+li.yin>span:nth-child(2) {
+    background: none;
+    width: 15%;
+}
+li.yin-active>span:nth-child(1), 
+li.yin-active>span:nth-child(3) {
+    background: #0d6efd;
+}
+
+/*断占提醒*/
+#tip {
+    line-height: 2rem;
+}
