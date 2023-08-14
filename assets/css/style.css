@@ -21,6 +21,13 @@ ul.gua>li>span {
     margin-bottom: 25px;
 }
 
+/*分隔线*/
+ul.gua>li:nth-child(3) {
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+    border-bottom: 1px dashed #ccc;
+}
+
 /*宜变之爻*/
 .should-bian {
     border: 2px solid #adb5bd;
@@ -43,13 +50,6 @@ ul.gua>li>span {
 .sb3 {top: 59.2%;}
 .sb2 {top: 69.6%;}
 .sb1 {top: 80.1%;}
-
-/*分隔线*/
-ul.gua>li:nth-child(3) {
-	padding-bottom: 10px;
-	margin-bottom: 35px;
-	border-bottom: 1px dashed #ccc;
-}
 
 /*阳爻*/
 li.yang>span:nth-child(1) {
@@ -75,7 +75,7 @@ li.yin-active>span:nth-child(3) {
     background: #0d6efd;
 }
 
-/*断占提醒*/
+/*断占提示*/
 #tip {
     line-height: 2rem;
 }

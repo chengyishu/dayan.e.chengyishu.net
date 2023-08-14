@@ -11,14 +11,14 @@
 		<link rel="icon" href="assets/img/favicons/favicon.ico">
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
-  <!-- <body class="d-none"> -->
-  <body>
+  <body class="d-none">
     <div class="container-fluid vh-100 d-flex align-items-center">
       <div class="row text-center w-100 mx-auto pb-4">
         <div class="col-sm-12">
           <h1 id="current" class="mb-4"></h1>
           <h3 class="mb-4 pb-4"><span id="today"></span></h3>
         </div>
+        <!-- 本卦 -->
         <div id="ben" class="d-none">
           <div class="card">
             <div class="should-bian"></div>
@@ -27,7 +27,6 @@
               <h3 class="title"></h3>
             </div>
             <div class="card-body">
-            	<!-- 本卦 -->
               <h5></h5>
               <ul class="list-unstyled mt-4 mb-2 gua">
                 <li class=""><span></span><span></span><span></span></li>
@@ -41,6 +40,7 @@
             </div>
           </div>
         </div>
+        <!-- 变卦（宜变之爻变）-->
         <div id="bian" class="d-none">
           <div class="card">
             <div class="should-bian"></div>
@@ -49,7 +49,6 @@
               <h3 class="title"></h3>
             </div>
             <div class="card-body">
-              <!-- 变卦 -->
               <h5></h5>
               <ul class="list-unstyled mt-4 mb-2 gua">
                 <li class=""><span></span><span></span><span></span></li>
@@ -63,6 +62,7 @@
             </div>
           </div>
         </div>
+        <!-- 变卦2（动爻齐变）-->
         <div id="bian2" class="d-none">
           <div class="card">
             <div class="should-bian"></div>
@@ -71,7 +71,6 @@
               <h3 class="title"></h3>
             </div>
             <div class="card-body">
-              <!-- 变卦2 -->
               <h5></h5>
               <ul class="list-unstyled mt-4 mb-2 gua">
                 <li class=""><span></span><span></span><span></span></li>
@@ -85,6 +84,7 @@
             </div>
           </div>
         </div>
+        <!-- 断占提示 -->
         <div class="col-sm-10 offset-sm-1">
           <h5 class="mt-5">※ <span id="tip"></span></h5>
         </div>
