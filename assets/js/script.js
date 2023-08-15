@@ -10,7 +10,7 @@ $(function() {
 		date=new Date();
 		ymd=moment().format('YYYYMMDD');
 		hms=moment().format('HHmmss');
-		href+="?ymd="+ymd+"&hms="+hms;
+		href="?ymd="+ymd+"&hms="+hms;
 	}
 	// 当前时间
 	var weekdays={0:"日",1:"一",2:"二",3:"三",4:"四",5:"五",6:"六"};
@@ -40,7 +40,7 @@ $(function() {
 			// 十有八变而成卦
 			benGua[i]=calcYao(yong);
 		}
-		href+="&gua="+benGua.toString().replaceAll(",","")
+		href="?ymd="+ymd+"&hms="+hms+"&gua="+benGua.toString().replaceAll(",","")
 	}
 	if (href) {
 		location.href=href;
@@ -152,9 +152,8 @@ $(function() {
 });
 
 function getUrlParam(name) {
-  var reg=new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
-  var r=window.location.search.substr(1).match(reg);
-  if (r!=null) return unescape(r[2]);return null;
+  let url = new URL(location.href);
+  return url.searchParams.get(name);
 }
 
 function isValidDate(date) {
