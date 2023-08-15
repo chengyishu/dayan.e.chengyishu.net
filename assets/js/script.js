@@ -260,6 +260,9 @@ function drawThe64Gua(selector,the64gua,shouldBianYao) {
 	var allGuaName=the64GuaName(outGuaXiang,inGuaXiang);
 	$(selector+' .card-body .title').html(allGuaName['name']);
 	$(selector+' .card-body .pinyin').html(allGuaName['pinyin']);
+  $(selector).on("click", function() {
+    window.open("https://e.chengyishu.net/data/?gua="+allGuaName['name'],"_blank");
+  });
 }
 
 function the64GuaName(outGuaXiang,inGuaXiang) {
